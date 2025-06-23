@@ -1,0 +1,20 @@
+
+<%- include("partials/header") %> 
+    <div style="padding-bottom: 35px; padding-top: 35px;">
+        <h1>Home</h1>
+        <p class="large-font"><%= homeContent %> </p>
+    </div>
+    
+    <% if (blogPosts.length>0) { %>
+        <% blogPosts.forEach(function(blog){ %>
+            <div class="jumbotron">
+                <h2><%= blog.title%> </h2> 
+                <p class="text-muted"><%= blog.date %> </p>
+                <p class="large-font hide-overflow"><%= blog.post %> </p>
+                <a class="large-font read-more" href="/posts/<%= blog._id %> ">Read More</a>
+            </div>
+        
+        <% });  %>
+    <% }; %>
+    
+<%- include("partials/footer") %> 

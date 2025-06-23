@@ -1,0 +1,39 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover, .read-more:hover {
+    color: #58b8df ;
+    transition: 20ms;
+    text-decoration: none;
+}
+
+.footer-clearence {
+    margin-bottom: 100px;
+}
+
+.large-font {
+    font-size: large;
+}
+
+.small-font {
+    font-size: small;
+}
+
+.hide-overflow {
+    overflow: hidden;
+    max-width: 100ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
